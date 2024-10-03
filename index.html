@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Toppings</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script type="module" src="./main.mjs"></script>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <form id="toppings-form">
+      <div class="form-group">
+        <label for="toppings">Select Toppings:</label>
+        <select multiple class="form-control" id="toppings">
+          <option value="🐷">🐷</option>
+          <option value="🍄">🍄</option>
+          <option value="🍅">🍅</option>
+          <option value="🧀">🧀</option>
+          <option value="🐑">🐑</option>
+          <option value="🌶">🌶</option>
+          <option value="🌵">🌵</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div id="toppings-list" class="mt-4">
+      <h3>Selected Toppings:</h3>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Topping</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Toppings will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+    <div id="pizza-table" class="mt-4"></div>
+  </div>
+</body>
+
+</html>
