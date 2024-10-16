@@ -31,7 +31,7 @@ function updateSelectedToppingsList(toppings) {
       (topping) =>
         `<span class="badge rounded-pill bg-dark badge-lg mr-1">${topping}</span>`
     )
-    .join("")}</2h>`;
+    .join("")}</h2>`;
 }
 
 function filterAndDisplayPizzas(selectedToppings) {
